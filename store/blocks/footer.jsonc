@@ -1,0 +1,140 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer-container"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer-container"
+    ]
+  },
+
+  "flex-layout.row#footer-container": {
+    "children": [
+      "flex-layout.row#footer-row1",
+      "flex-layout.row#footer-row2"
+    ],
+    "props": {
+      "blockClass": ["footer-container"]
+    }
+  },
+
+  "flex-layout.row#footer-row1": {
+    "children": [
+      "flex-layout.col#footer-area1",
+      "flex-layout.col#footer-area2",
+      "flex-layout.col#footer-area3"
+    ],
+    "props": {
+      "blockClass": ["footer-row", "footer-row1"]
+    }
+  },
+  "flex-layout.row#footer-row2": {
+    "children": [
+      "flex-layout.col#footer-area4",
+      "flex-layout.col#footer-area5",
+      "flex-layout.col#footer-area6"
+    ],
+    "props": {
+      "blockClass": ["footer-row", "footer-row1"]
+    }
+  },
+
+  "flex-layout.col#footer-area1": {
+    "children": [
+      "rich-text#footer-area-title",
+      "vtex.menu@2.x:menu#menu-websites"
+    ],
+    "props": {
+      "blockClass": ["footer-area", "footer-area1"]
+    }
+  },
+  "flex-layout.col#footer-area2": {
+    "children": [
+      "rich-text#footer-area-title",
+      "vtex.menu@2.x:menu#menu-websites"
+    ],
+    "props": {
+      "blockClass": ["footer-area", "footer-area2"]
+    }
+  },
+  "flex-layout.col#footer-area3": {
+    "children": [
+      "rich-text#footer-area-title",
+      "vtex.menu@2.x:menu#menu-websites"
+    ],
+    "props": {
+      "blockClass": ["footer-area", "footer-area3"]
+    }
+  },
+  "flex-layout.col#footer-area4": {
+    "children": [
+      "rich-text#footer-area-title",
+      "vtex.menu@2.x:menu#menu-websites"
+    ],
+    "props": {
+      "blockClass": ["footer-area", "footer-area4"]
+    }
+  },
+  "flex-layout.col#footer-area5": {
+    "children": [
+      "rich-text#footer-area-title",
+      "vtex.menu@2.x:menu#menu-websites"
+    ],
+    "props": {
+      "blockClass": ["footer-area", "footer-area5"]
+    }
+  },
+  "flex-layout.col#footer-area6": {
+    "children": [
+      "rich-text#footer-area-title",
+      "vtex.menu@2.x:menu#menu-websites"
+    ],
+    "props": {
+      "blockClass": ["footer-area", "footer-area6"]
+    }
+  },
+
+  "rich-text#footer-area-title": {
+    "props": {
+      "text": "TITULO DA ÁREA",
+      "blockClass": ["footer-area-title"]
+    }
+  },
+
+
+
+  "flex-layout.row#footer2": { 
+    "children": [
+      "social-networks",
+      "accepted-payment-methods",
+      "powered-by"
+    ]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" }
+      ]
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"]
+    }
+  },
+  "powered-by": {
+    "props": {
+      "showInColor": true
+    }
+  }
+}
